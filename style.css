@@ -252,7 +252,7 @@ span {
     width: calc(100% + 8px);
   }
 }
-.headering {
+.heading {
   font-size: 8rem;
   text-align: center;
   margin: 5rem 0;
@@ -345,16 +345,19 @@ span {
   background-color: var(--bg-color);
   width: 50px;
 }
-.services {
+.projects {
   background: var(--bg-color);
   color: black;
 }
-.services h2 {
+.projects h2 {
+  margin-bottom: 5rem;
+  color: white;
+}
+.services-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2.5rem;
-  color: white;
 }
 .service-box {
   background-color: var(--main-color);
@@ -368,8 +371,9 @@ span {
   background: white;
   color: black;
   border: 5px solid var(--main-color);
+  transform: scale(1.03);
 }
-.service-box .service-info {
+.service-box a .service-info {
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -514,7 +518,7 @@ textarea {
   .timeline-dot {
     left: 0;
   }
-  .services {
+  .projects {
     padding-bottom: 7rem;
   }
   .contact form {
@@ -568,7 +572,7 @@ textarea {
   .home-img img {
     width: 56vw;
   }
-  .services h2 {
+  .projects h2 {
     margin-bottom: 3rem;
   }
   .services-container {
